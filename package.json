@@ -1,0 +1,8 @@
+{
+    "name": "drawingboard-micro-websocket-nodejs",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "pdos",
+    "contributors": [],
+    "dependencies": {"express": "4.x", "socket.io" : "1.x"}
+}

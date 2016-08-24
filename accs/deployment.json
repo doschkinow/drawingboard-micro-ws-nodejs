@@ -1,0 +1,7 @@
+{
+  "memory": "1G",
+  "instances": "1", 
+  "environment": {
+    "SSE_LOCATION":"dbmicrosse-gse00000361.apaas.em2.oraclecloud.com"
+  }
+}
