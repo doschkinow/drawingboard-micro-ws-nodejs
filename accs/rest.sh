@@ -1,7 +1,7 @@
 app=dbmicrows
 notes="$app for ACCS"
-identityDomain=gse00000361
-credentials="cloud.admin:ablAtivE@4Iowa"
+identityDomain=gse00000363
+credentials="cloud.admin:myopiC@0RigoR"
 #identityDomain=deoracle69725
 #credentials="peter.doschkinow@oracle.com:***"
 #endpoint=https://apaas.us.oraclecloud.com/paas/service/apaas/api/v1.1/apps
@@ -26,12 +26,15 @@ create)
         -F "deployment=@deployment.json" \
         -F "archiveURL=$app/$app.tar.gz" -F "notes=$notes"  \
         $endpoint/$identityDomain
-    #rm $app.tar.gz
+    rm $app.tar.gz
     ;;
 
 update)
     tar -czvf $app.tar.gz manifest.json -C .. drawingboard node_modules package.json main.js
-    curl -X PUT -u $credentials \
+    curl -v -i -X PUT -u $credentials \
+        https://$identityDomain.storage.oraclecloud.com/v1/Storage-$identityDomain/$app/$app.tar.gz \
+        -T $app.tar.gz
+    curl -v -X PUT -u $credentials \
         -H "X-ID-TENANT-NAME:$identityDomain" \
         -H "Content-Type: multipart/form-data" \
         -F "deployment=@deployment.json" \
