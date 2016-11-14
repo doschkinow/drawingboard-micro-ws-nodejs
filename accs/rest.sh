@@ -1,8 +1,9 @@
 app=dbmicrows
 notes="$app for ACCS"
-identityDomain=gse00000363
-credentials="cloud.admin:myopiC@0RigoR"
-#identityDomain=deoracle69725
+#credentials="cloud.admin:myopiC@0RigoR"
+credentials="cloud.admin:DAmageD@9Scope"
+identityDomain=gse00000361
+#identityDomain=gse00000363
 #credentials="peter.doschkinow@oracle.com:***"
 #endpoint=https://apaas.us.oraclecloud.com/paas/service/apaas/api/v1.1/apps
 endpoint=https://apaas.europe.oraclecloud.com/paas/service/apaas/api/v1.1/apps
