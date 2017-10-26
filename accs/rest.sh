@@ -1,6 +1,6 @@
 app=dbmicrows
 notes="$app for ACCS"
-credentials="cloud.admin:virulentRealm@3"
+credentials="cloud.admin:***"
 identityDomain=gse00011916
 #identityDomain=gse00000363
 #credentials="peter.doschkinow@oracle.com:***"
